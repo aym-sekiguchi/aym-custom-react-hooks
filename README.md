@@ -1,43 +1,41 @@
-# 学習用テンプレートリポジトリ
+# custom-hooks
 
-このリポジトリは、React/Next.js学習におけるアウトプットのベースとして使用します。
+React の開発を効率化するためのカスタムフック集です。  
+実務や学習の中で頻繁に使うロジックをフックとして切り出し、再利用・保守性を高めることを目的としています。
 
-## 含まれているもの
+## 使用技術
 
-- README雛形
-- .gitignore（Node.js向け）
-- MIT License
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)（必要に応じて）
 
-## 使い方
+## セットアップ
 
-1. このテンプレートから新しいリポジトリを作成
-2. 自分のプロジェクト内容に合わせて編集
-3. GitHubにpushし、必要に応じてデプロイ
+```bash
+# 依存パッケージのインストール
+bun i
 
-## 運用ルールの推奨
+# 開発サーバーの起動
+bun run dev
+```
 
-このテンプレートから作成されたリポジトリでは、以下の運用ルールを設定することを推奨します。
+## フォルダ構成（予定）
 
-### ブランチ保護（main ブランチ）
+```txt
+src/
+├── app/          # ページ
+├── hooks/        # カスタムフック置き場
+├── components/   # 必要に応じてデモ用コンポーネントなど
+└── styles/       # スタイルシート
+```
 
-このテンプレートから作成されたリポジトリでは、以下のブランチ保護ルールを `main` ブランチに対して設定することを推奨します。
+## 今後の予定
 
-- ✅ Pull Request 経由でのみマージを許可（`Require a pull request before merging`）
-  - Copilot によるレビューを自動実行（`Request pull request review from Copilot`）
-- 🚫 強制プッシュの禁止（`Block force pushes`）
-- 🚫 ブランチの削除を禁止（`Restrict deletions`）
+- よく使うユーティリティ系フックの実装（useCounter, useToggle, usePrevious など）
+- 複数のフックを組み合わせたカスタムフックの設計
+- デモを通じた動作確認とテスト導入（Jest / Vitest など）
 
-> これにより、コードの信頼性・レビュー品質・履歴の安全性が担保されます。
+## ライセンス
 
-※ テンプレートからリポジトリを作成した場合、これらの設定は自動では引き継がれません。  
-　必要に応じて GitHub の Settings → Branches より手動で設定してください。
-
-### 📝 Pull Request テンプレート
-
-このテンプレートリポジトリには、Copilot に日本語でレビューさせるための `pull_request_template.md` が `.github/` ディレクトリに含まれています。
-
-このテンプレートを用いることで、PR の目的やレビュー観点が明確になり、Copilot も日本語で的確なレビューを行いやすくなります。
-
----
-
-📘 詳細や記録は「不可能を超えるフロントエンドの歩み」にまとめています。
+MIT
