@@ -11,7 +11,9 @@ createRoot(document.getElementById("root")!).render(
       <PageTitle>Hooks</PageTitle>
       <Card href="/useToggle/">
         <CardHeader>useToggle</CardHeader>
-        <CardDescription>A custom hook that manages a boolean state and provides a toggle function.</CardDescription>
+        <CardDescription>
+          <strong>useToggle</strong> は、真偽値の状態を切り替えるカスタムフックです。
+        </CardDescription>
       </Card>
     </Layout>
   </StrictMode>

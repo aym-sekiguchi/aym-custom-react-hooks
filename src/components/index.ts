@@ -3,3 +3,7 @@ export * from "./src/footer";
 export * from "./src/layout";
 export * from "./src/card";
 export * from "./src/page-title";
+export * from "./src/button";
+export * from "./src/sample";
+export * from "./src/code-block";
+export * from "./src/hook-description";
