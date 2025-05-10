@@ -8,7 +8,7 @@ export function CodeBlock(props: { children?: React.ReactNode } & React.HTMLAttr
   return (
     <div className={`overflow-x-hidden group ${className}`} {...rest}>
       <Button
-        onClick={() => navigator.clipboard.writeText(children as string)}
+        onClick={() => navigator.clipboard.writeText(String(children))}
         className="absolute top-2 right-2 !p-0 size-10 flex items-center justify-center opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition cursor-pointer"
       >
         <svg
