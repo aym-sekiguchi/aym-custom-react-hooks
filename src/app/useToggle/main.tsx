@@ -5,8 +5,8 @@ import { HookDescription, Layout, PageTitle, Sample } from "@/components";
 import { Preview } from "./components/preview";
 
 import code from "./components/preview.tsx?raw";
-import simple from "@/hooks/src/useToggle/useToggle.ts?raw";
-import memoized from "@/hooks/src/useToggle/useToggle.memoized.ts?raw";
+import simple from "@/hooks/useToggle/useToggle.ts?raw";
+import memoized from "@/hooks/useToggle/useToggle.memoized.ts?raw";
 
 import "@/styles/globals.css";
 

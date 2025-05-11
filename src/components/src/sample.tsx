@@ -21,17 +21,17 @@ export function Sample(props: {
   return (
     <>
       <div className="bg-zinc-900 border border-zinc-500 rounded-t-md p-2">
-        <div className="bg-zinc-800 border border-zinc-500 rounded-md w-fit">
+        <div className="bg-zinc-800 border border-zinc-500 rounded-md w-fit -mr-px">
           {items.map((item, index) => (
             <button
               key={index}
               onClick={() => setActive(item)}
-              className={`px-4 py-1 font-semibold relative -my-px -ml-px border ${
+              className={`px-4 py-1 font-semibold relative -m-px border group ${
                 active === item ? "bg-zinc-900 border-zinc-400 rounded-md" : "border-transparent cursor-pointer"
               }`}
             >
               {item}
-              <span className="absolute inset-y-0 -right-px block h-[1rem] w-px bg-zinc-400 m-auto" />
+              <span className="absolute inset-y-0 -right-px block h-[1rem] w-px bg-zinc-400 m-auto group-last-of-type:hidden" />
             </button>
           ))}
         </div>
