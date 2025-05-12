@@ -9,7 +9,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Layout>
       <PageTitle>Hooks</PageTitle>
-      <Card href="./useToggle/">
+      <Card href="/aym-custom-react-hooks/useToggle/">
         <CardHeader>useToggle</CardHeader>
         <CardDescription>
           <strong>useToggle</strong> は、真偽値の状態を切り替えるカスタムフックです。
