@@ -36,6 +36,11 @@ src/
 - 複数のフックを組み合わせたカスタムフックの設計
 - デモを通じた動作確認とテスト導入（Jest / Vitest など）
 
+## デプロイ先
+
+- [Vercel](https://aym-custom-react-hooks.vercel.app/aym-custom-react-hooks/)
+- [GitHub Pages](https://aym-sekiguchi.github.io/aym-custom-react-hooks/)
+
 ## ライセンス
 
 MIT
