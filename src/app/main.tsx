@@ -8,7 +8,7 @@ import "@/styles/globals.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Layout>
-      <PageTitle>Hooks1</PageTitle>
+      <PageTitle>Hooks</PageTitle>
       <Card href="./useToggle/">
         <CardHeader>useToggle</CardHeader>
         <CardDescription>
