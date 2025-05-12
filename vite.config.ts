@@ -7,7 +7,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "./",
+  base: "/aym-custom-react-hooks/",
   root: resolve(__dirname, "src/app"),
   resolve: {
     alias: {
@@ -18,7 +18,7 @@ export default defineConfig({
     host: true,
   },
   build: {
-    outDir: resolve(__dirname, "dist/"),
+    outDir: resolve(__dirname, "dist/aym-custom-react-hooks/"),
     rollupOptions: {
       input: [
         resolve(__dirname, "src/app/index.html"),
