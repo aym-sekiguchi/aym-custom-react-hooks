@@ -4,7 +4,10 @@ export function Button(props: { children?: React.ReactNode } & React.ButtonHTMLA
 
   /* === return === */
   return (
-    <button className={`bg-zinc-800 border border-zinc-500 rounded-md px-3 py-2 ${className}`} {...rest}>
+    <button
+      className={`bg-zinc-800 border border-zinc-500 rounded-md px-3 py-2 cursor-pointer hover:opacity-70 transition ${className}`}
+      {...rest}
+    >
       {children}
     </button>
   );
