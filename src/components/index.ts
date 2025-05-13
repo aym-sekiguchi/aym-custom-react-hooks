@@ -7,3 +7,4 @@ export * from "./src/button";
 export * from "./src/sample";
 export * from "./src/code-block";
 export * from "./src/hook-description";
+export * from "./src/input";

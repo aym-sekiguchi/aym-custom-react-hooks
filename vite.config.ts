@@ -22,7 +22,7 @@ export default defineConfig({
     rollupOptions: {
       input: [
         resolve(__dirname, "src/app/index.html"),
-        ...["useToggle"].map((page) => resolve(__dirname, `src/app/${page}/index.html`)),
+        ...["useToggle", "useDebounce"].map((page) => resolve(__dirname, `src/app/${page}/index.html`)),
       ],
     },
     emptyOutDir: true,
